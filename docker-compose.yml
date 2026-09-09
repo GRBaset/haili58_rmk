@@ -1,0 +1,8 @@
+name: rmk-compile
+
+services:
+  compile:
+    build: .
+    image: rmk-compile-compile
+    volumes:
+      - .:/usr/src/myapp
