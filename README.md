@@ -2,6 +2,12 @@
 
 RMK is a feature-rich and easy-to-use keyboard firmware.
 
+## Docker container
+To compile using the Docker container:
+```shell
+docker compose up
+```
+
 ## uf2 support
 
 If you’re using the Adafruit_nRF52_Bootloader (pre-installed on the nice!nano), you’re in luck! This bootloader supports the .uf2 firmware format, which eliminates the need for a debugging probe to flash your firmware. RMK uses the `cargo-make` tool to generate .uf2 firmware, with the generation process defined in the `Makefile.toml`.
